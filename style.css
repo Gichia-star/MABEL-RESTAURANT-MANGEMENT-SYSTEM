@@ -1,0 +1,566 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+
+}
+
+/* upper font styles  */
+.text{
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+    gap:60px;
+    color: rgb(218, 180, 8);
+
+}
+.text a {
+    margin-top: 20px;
+}
+
+/* search button and search box styles*/
+
+.search-box{
+    width: 200px;
+    margin-top: 14px;
+    height: 26px;
+    border-radius: 5px;
+}
+
+.search-btn{
+    background-color:rgb(234, 174, 11);
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 30px;
+    margin-top: 18px;
+    margin-right: 20px;
+}
+.search-btn:hover{
+    background: var(green);
+
+}
+
+/* Link styles */
+a:link, a:visited {
+    color: inherit; /* Keeps the link color consistent with the surrounding text */
+    text-decoration: none; /* Removes the underline from links */
+}
+
+/* Optional: Define hover and active states if needed */
+a:hover, a:active {
+    text-decoration: underline; /* Adds an underline when hovering or clicking */
+    color: inherit; /* Keeps the color consistent */
+}
+
+
+
+
+/* Login button styles  */
+
+
+.login-btn{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+/* background Image styles  */
+
+.background-image{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+/* Logo styles  */
+
+.logo{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top : 0px;
+    margin-left: 0%;
+    margin-top: 50px;
+
+}
+/* background font styles  */
+
+.Btext{
+    font-size: 100px;
+    color: white;
+    font-weight: bolder;
+    line-height: 0px;
+    margin-left: 180px;
+    margin-top: 250px;    
+}
+#text8{
+    color: rgba(255, 179, 0, 0.832);
+    font-size: 20px;
+    line-height: 0;
+    margin-left: 230px;
+
+}
+
+
+
+/* Box Image styles  */
+
+.img-Container{
+    width: 85%;
+    height: 600px;
+    background-color: white;
+    margin: 20px auto;
+    margin-top: 300px;
+    margin-left: 220px;
+    position: relative;
+    display: inline-block;
+}
+.image{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;  
+    position: absolute;
+    display: block;
+    filter: brightness(80%);
+}
+
+
+/* Box Image font styles  */
+
+.img-descripton{
+    color: black;
+    margin-bottom: 20px;
+    position: absolute;
+
+}
+#des1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(216, 217, 209);
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 150px;
+    margin-left: 500px;
+}
+#des2{
+    margin-left: 500px;
+    color: rgba(32, 31, 31, 0.897);
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 150px;
+
+}
+#des3{
+    margin-left: 500px;
+    font-family: 'Gill Sans',  'Trebuchet MS', sans-serif;
+    font-size: 21px;
+    margin-top: 150px;
+    line-height: 30px;
+
+}
+
+
+/* Menu styles  */
+
+.menu{
+    font-size: 30px;
+    color: rgba(255, 162, 0, 0.871);
+    margin-top: 100px;
+}
+
+#menu1{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#menu2{
+    font-size: 40px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#menu3{
+    font-family: cursive;
+    font-size: 20px;
+    color: azure;
+    margin-top: 100px;
+    margin-left: 80px;
+    line-height: 80px;
+}
+
+
+
+/* Box image 2nd styles    */
+
+.img-Container1{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    margin: 20px auto;
+    margin-top: 150px;
+    margin-left: 0px;
+    position: relative;
+    display: inline-block;
+}
+.image1{
+    width: 100%; 
+    height: 100%;  
+    position: absolute;
+    display: block;
+    object-fit: cover; 
+    filter: brightness(40%);
+}
+
+
+/* Box Image 2nd font styles  */
+
+.img-descripton1{
+    color: black;
+    margin-bottom: 20px;
+    position: absolute;
+}
+#Des1{
+    font-family: cursive;
+    color: rgb(255, 157, 0);
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 150px;
+    margin-left: 600px;
+}
+#Des2{
+    margin-left: 600px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 150px;
+
+}
+#Des3{
+    margin-left: 600px;
+    margin-right: 200px;
+    color: rgb(193, 207, 218);
+    font-family: 'Gill Sans',  'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-top: 180px;
+    line-height: 30px;
+
+}
+
+/* Third Image styles */
+
+.image2{
+    width: 800px;
+    height: 600px;
+    margin-top: 60px;
+    margin-left: 60px;
+    filter: brightness(85%);
+}
+
+/* text box*/
+
+.text-box{
+    width: 600px;
+    height: 350px;
+    background-color:  rgb(255, 162, 0);
+    margin-left: 900px;
+    margin-top:3090px;
+    transition : all 0.5s ; position: relative; left :0; top :0;
+    position:absolute;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* text box descriptions */
+
+#Txt1{
+    font-size: 35px;
+    color: brown;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-family: "Playwrite Cuba";
+    
+}
+
+#Txt2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom:0px;
+    margin-top: 0px;
+}
+
+#Txt3{
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 0px;
+    color: rgb(232, 233, 234);
+    
+}
+
+#Txt4{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 35px;
+    margin-right: 7px;
+}
+
+/*  forth image styles*/
+
+.image3{
+    width: 800px;
+    height: 600px;
+    position: static;
+    margin-top: 50px;
+    margin-left: 650px;
+}
+
+
+/* second text box*/
+
+.text-box1{
+    width: 600px;
+    height: 350px;
+    background-color: rgb(255, 162, 0);
+    margin-left: 20px;
+    margin-top:3750px;
+    transition : all 0.5s ; position: relative; left :0; top :0;
+    position:absolute;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#Txtt1{
+    font-size: 35px;
+    color: brown;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-family: "Playwrite Cuba";
+    
+}
+
+#Txtt2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom:0px;
+    margin-top: 0px;
+}
+
+#Txtt3{
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 0px;
+    color: rgb(232, 233, 234);
+    
+}
+
+#Txtt4{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 35px;
+    margin-right: 7px;
+}
+
+.box{
+    width: 100%;
+    height: 980px;
+    background-color: rgb(22, 22, 22);
+    margin-top: 100px;
+}
+
+#promotion{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 150px;
+    text-align: center;
+    color: rgb(164, 109, 6);
+    font-weight:bold;
+}
+
+.promo1{
+    width: 500px;
+    height: auto;
+    margin-top: 100px;
+}
+.promo2{
+    width: 500px;
+    height: auto;
+}
+.promo3{
+    position: absolute;
+    width: 494px;
+    height: 333px;
+    margin-left: 5px;
+    margin-top: 100px;
+}
+
+#promot1{
+    color: white;
+    display: flex;
+    margin-left: 90px;
+    font-size: 30px;
+    position: absolute;
+}
+#promot2{
+    color: white;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    position: absolute;
+    margin-left: 600px;
+}
+#promot3{
+    color: white;
+    display: flex;
+    font-size: 30px;
+    justify-content: right;
+    position: absolute;
+    margin-left: 1100px;
+}
+#promot4{
+    color: rgb(242, 199, 79);
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    justify-content: right;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 500px;
+}
+#promot5{
+    color: rgb(242, 199, 79);
+    display: flex;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: right;
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 500px;
+}
+#promot6{
+    color: rgb(242, 199, 79);
+    display: flex;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: right;
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: 500px;
+}
+
+.event{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(101, 6, 255);
+    text-align: center;
+    margin-top: 150px;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.musicpic{
+    width: 90%;
+    height: auto;
+}
+
+.img-Container3{
+    width: 100%;
+    height: 980px;
+    background-color: rgb(16, 15, 15);
+    margin-top: 150px;
+}
+
+#park1{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 162, 0);
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.parking-img{
+    width: 850px;
+    height: 600px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.text-box3{
+    width: 550px;
+    height: 350px;
+    background-color: rgb(255, 162, 0);
+    margin-left: 930px;
+    margin-top:150px;
+    position:absolute;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+#Txtp1{
+    font-size: 35px;
+    color: brown;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-family: "Playwrite Cuba";
+    
+}
+
+#Txtp2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom:0px;
+    margin-top: 0px;
+}
+#Txtp3{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 35px;
+    margin-right: 7px;
+}
+
+.box2{
+    width: 100%;
+    height: 280px;
+    background-color: rgb(245, 169, 17);
+    margin-top: 100px;
+
+
+}
+#contact1{
+    font-size: 40px;
+    color: rgb(230, 222, 222);
+    text-align: center;
+    font-weight: bold;
+    line-height: 70px;
+    margin-bottom: 25px;
+    font-family: cursive;
+
+}
+
+
+
+.contact-text{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 280px;
+    font-weight: bold;
+}
+.contact-text2{
+    font-size: 20px;
+    color: rgb(38, 36, 36);
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+}

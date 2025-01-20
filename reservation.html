@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Reservation</title>
+</head>
+<body>
+    <form action="reservation.php" method="POST">
+    <div class="reservation2">
+        <p id="reservation-text1">Table <br>Availability Mabel Restaurant</p>
+        <p id="reservation-text2">We take reservations for lunch and dinner. To make a reservation, please call us between 10am-6pm, Monday to Friday.<br><br><br>
+            
+Our restaurant offers a comfortable dining experience with 20 tables available for our guests. Whether you're planning a small gathering or a cozy meal, 
+our tables are ready to accommodate you. <br><br><br>
+            call - (034) 2568935 / 071-2056893
+        </p>
+    </div>
+    <p id="reservation-text">Table Reservation</p>
+    <img src="https://www.datocms-assets.com/38028/1650487236-4.png" class="reservation-img">
+
+    <div class="reservation3">
+        <form action="reserve.php" method="POST">
+            <div class="reservation">
+                <div class="res-text">
+                    <p id="res-text1">Reservation</p>
+                    <p id="res-text2">BOOK A TABLE</p>
+                </div>
+                <div class="textbox1">
+                    <input type="text" name="name" class="textbox1" placeholder="Your Name*" required>
+                    <input type="text" name="nic_number" class="textbox1" placeholder="NIC Number*" required>
+                    <input type="email" name="email" class="textbox1" placeholder="Email Address*" required>
+                    <input type="text" name="phone" class="textbox1" placeholder="Phone*" required>
+                    <input type="date" name="reservation_date" class="textbox1" placeholder="Date*" required>
+                    <input type="time" name="reservation_time" class="textbox2" placeholder="Time*" required>
+                    <input type="number" name="number_of_persons" class="textbox1" placeholder="Persons*" required>
+                    <textarea name="message" class="textbox1" placeholder="Message"></textarea>
+                </div>
+                <div class="book-button">
+                    <button type="submit">Book Now</button>
+                </div>
+                <a class="link" href="./index.php">Back</a>
+            </div>
+        </form>
+    </div>
+    <style>
+        body{
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.reservation3{
+    width: 100%;
+    height: 940px;
+    background-color: rgb(100, 69, 34);
+    margin-top: 200px;
+    position: absolute;
+}
+.reservation{
+    width: 1200px;
+    height: 690px;
+    background-color: white;
+    margin-top: 130px;
+    margin-left: 150px;
+}
+.reservation2{
+    width: 650px;
+    height: 650px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 230px;
+    margin-left: 800px;
+    position: absolute;
+}
+
+#reservation-text{
+    color: rgb(255, 248, 233);
+    font-size: 60px;
+    text-align: center;
+}
+
+.reservation-img{
+    margin-top: 100px;
+    margin-left: 50px;
+    width:950px;
+    height: auto;
+}
+
+
+#reservation-text1{
+    color: rgb(216, 146, 6);
+    font-size: 50px;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+#reservation-text2{
+    color: white;
+    margin-top: 100px;
+    font-size: 20px;
+    margin-left: 170px;
+}
+
+.res-text{
+    text-align: center;
+}
+#res-text1{
+    font-size: 40px;
+    color: rgba(255, 170, 0, 0.899);
+    line-height: 100px;
+    font-family: cursive;
+
+}
+#res-text2{
+    font-size: 50px;
+    line-height: 0px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.textbox1{
+    display: flex;
+    font-size: 20px;
+    height: 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-left: 130px;
+
+}
+.textbox2{
+    margin-left: 225px;
+    width: 252px;
+}
+.text a{
+    font-size: 10px;
+}
+
+.book-button{
+    margin-left: 400px;
+    margin-top: 300px;
+}
+button{
+    background-color: rgb(232, 167, 13);
+    width: 400px;
+    height: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.link {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    margin-left: 530px;
+    width: 100px;
+    color: #fff;
+    background-color: #000000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link:hover {
+    background-color: #e2620c;
+    color: black;
+}
+    </style>
+</body>
+</html>

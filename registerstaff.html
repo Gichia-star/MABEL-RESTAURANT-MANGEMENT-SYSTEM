@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Staff</title>
+</head>
+<body>
+    <form action="registerstaff.php" method="POST">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/007/822/862/small/abstract-pastel-gradient-background-free-vector.jpg" class="register-img">
+        <div class="register-box">
+            <p id="register-text">Register Form</p>
+            <input type="text" name="Username" class="register-textbox1" placeholder="Enter Username*" required>
+            <input type="password" name="Password" class="register-textbox2" placeholder="Enter Password*" required>
+            <select name="Role" class="combo-box" required>
+                <option value="" disabled selected>Select Role*</option>
+                <option value="manager">manager</option>
+                <option value="cook">cook</option>
+                <option value="staff">waiter</option>
+            </select>
+            <button type="submit" class="register-btn">Register</button>
+            <div class="links">
+                <a href="adminsystem.html" class="link">Back</a>
+                <a href="Viewusers.php" class="link">Manage Users</a>
+
+                
+
+            </div>
+        </div>
+    </form>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+ 
+        .register-img {
+            width: 100%;
+            height: 696px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .register-box {
+            width: 376px;
+            height: 520px;
+            position: absolute;
+            margin: 2% auto;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            overflow: hidden;
+            margin-left: 560px;
+            margin-top: 90px;
+        }
+
+        #register-text {
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-weight: bold;
+            line-height: 100px;
+        }
+
+        .register-textbox1, .register-textbox2 {
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 2px solid rgb(0, 0, 0);
+            outline: none;
+            border-top: transparent;
+            background: transparent;
+            color: rgb(0, 0, 0);
+        }
+
+        .register-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: #342f36;
+            border: 0;
+            border-radius: 30px;
+            outline: none;
+            margin-top: 30px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        .combo-box {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            background: transparent;
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .combo-box option {
+            background-color: #333;
+            color: rgb(0, 0, 0);
+        }
+
+        .links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 10px;
+            color: #fff;
+            background-color: #4a3458;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .link:hover {
+            background-color: #5d69eb;
+            color: black;
+        }
+    </style>
+</body>
+</html>

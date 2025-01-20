@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Interface</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e1e1e1;
+            overflow-x: hidden;
+        }
+
+        #admin-title {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 20px;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box h2 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #23221c;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .admin-btn {
+            padding: 12px 25px;
+            font-size: 1.1em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .admin-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .admin-btn:active {
+            background-color: #004494;
+        }
+
+        .event-textbox1 {
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            width: calc(100% - 24px);
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        /* Back Button Styles */
+        .back-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .back-btn:hover {
+            background-color: #c82333;
+        }
+
+        .back-btn:active {
+            background-color: #bd2130;
+        }
+
+        /* Animations */
+        .fade-out {
+            animation: fadeOut 0.5s forwards;
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function navigateWithAnimation(url) {
+            document.body.classList.add('fade-out');
+            setTimeout(function() {
+                window.location.href = url;
+            }, 500); // Match this time with the animation duration
+        }
+
+        function managestaffb() {
+            navigateWithAnimation('registerstaff.html');
+        }
+
+        function managefoodb() {
+            navigateWithAnimation('AdminManageFood.php');
+        }
+
+        function managereservationsb() {
+            navigateWithAnimation('manage_reservationAdminPannel.php');
+        }
+
+        function manageordersb() {
+            navigateWithAnimation('manage_preorderAdminpanel.php');
+        }
+
+        function managepromotionsb() {
+            navigateWithAnimation('upload.php');
+        }
+
+
+    </script>
+</head>
+<body>
+    <p id="admin-title">Admin Interface</p>
+
+    <div class="container">
+        <div class="box staff-box">
+            <h2>Manage Staff</h2>
+            <button type="button" name="managestaffbtn" id="manage-staffbtn" class="admin-btn" onclick="managestaffb()">Manage</button>
+        </div>
+
+        <div class="box food-box">
+            <h2>Manage Food</h2>
+            <button type="button" name="managefoodbtn" id="manage-foodbtn" class="admin-btn" onclick="managefoodb()">Manage</button>
+        </div>
+
+        <div class="box reservations-box">
+            <h2>Manage Reservations</h2>
+            <button type="button" name="managereservationsbtn" id="manage-reservationsbtn" class="admin-btn" onclick="managereservationsb()">Manage</button>
+        </div>
+
+        <div class="box orders-box">
+            <h2>Manage Pre Orders</h2>
+            <button type="button" name="manageordersbtn" id="manage-ordersbtn" class="admin-btn" onclick="manageordersb()">Manage</button>
+        </div>
+
+        <div class="box promotions-box">
+            <h2>Manage Promotions / Events</h2>
+            <button type="button" name="managepromotionsbtn" id="manage-promotionsbtn" class="admin-btn" onclick="managepromotionsb()">Manage</button>
+        </div>
+
+
+    </div>
+
+    <a href="login.html" class="back-btn">Back</a>
+</body>
+</html>
